@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa 1</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./programa1.css">
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="programa1.html" class="active">Programa 1</a></li>
+            <li><a href="../PROGRAMA 2/programa2.html">Programa 2</a></li>
+            <li><a href="../PROGRAMA 3/programa3.html">Programa 3</a></li>
+            <li><a href="../PROGRAMA 4/programa4.html">Programa 4</a></li>
+            <li><a href="../PROGRAMA 5/programa5.html">Programa 5</a></li>
+            <li><a href="../PROGRAMA 6/programa6.html">Programa 6</a></li>
+        </ul>
+    </div>
+    <img src="https://img.icons8.com/color/96/000000/heart-with-pulse--v2.png" alt="Saúde" class="health-icon">
+    <h1>Cálculo de IMC - IBV Tech</h1>
+    <main class="container">
+        <form id="formIBV">
+         <label for="pesoIBV">Peso (kg):</label>
+         <input type="number" id="pesoIBV" name="pesoIBV" step="0.01" required>
+         <label for="alturaIBV">Altura (m):</label>
+         <input type="number" id="alturaIBV" name="alturaIBV" step="0.01" required>
+         <button type="submit">Calcular IMC</button>
+    </form>
+    <div id="resultadoIBV"></div>
+    <div id="resultadoClassificacaoIBV"></div>
+    <div id="resultadoSituacaoIBV"></div>
+    </main>
+    <script src="programa1.js"></script>
+</body>
+</html>
