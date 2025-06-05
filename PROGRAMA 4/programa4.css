@@ -1,0 +1,106 @@
+@import url("../style.css");
+
+body {
+    background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* Ícone do relógio */
+.factorial-icon {
+    display: block;
+    margin: 32px auto 10px;
+    width: 80px;
+    height: 80px;
+}
+
+h1 {
+    text-align: center;
+    color: #2d3e50;
+    margin-bottom: 18px;
+    font-size: 2.1rem;
+    letter-spacing: 1px;
+}
+
+.container {
+    background: #fff;
+    max-width: 370px;
+    margin: 0 auto;
+    padding: 32px 28px 24px;
+    border-radius: 18px;
+    box-shadow: 0 6px 32px rgba(44,62,80,0.13);
+}
+
+form#formFatorial {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+label {
+    font-size: 1.1rem;
+    color: #2d3e50;
+    margin-bottom: 4px;
+}
+
+input[type="number"] {
+    padding: 10px;
+    border: 1.5px solid #b0bec5;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    background: #f7fafc;
+    transition: border 0.2s, background 0.2s;
+}
+input[type="number"]:focus {
+    border-color: #4fc3f7;
+    background: #e3f2fd;
+}
+
+button[type="submit"] {
+    background: #4fc3f7;
+    color: #fff;
+    border: none;
+    padding: 12px 0;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 8px;
+    letter-spacing: 1px;
+    transition: background 0.2s;
+}
+button[type="submit"]:hover {
+    background: #039be5;
+}
+
+#resultadoFatorial {
+    margin-top: 22px;
+    font-size: 1.15rem;
+    text-align: center;
+    color: #263238;
+    min-height: 28px;
+}
+
+@media (max-width: 700px) {
+    .container {
+        padding: 18px 8px 16px;
+        max-width: 98vw;
+    }
+    h1 {
+        font-size: 1.2rem;
+    }
+    .factorial-icon {
+        width: 60px;
+        height: 60px;
+    }
+    .navbar a {
+        padding: 12px 10px;
+        font-size: 0.98rem;
+    }
+    .navbar ul {
+        flex-wrap: wrap;
+    }
+}
